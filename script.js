@@ -395,3 +395,10 @@
             window.addEventListener('scroll', handleScroll);
             handleScroll(); // Executa uma vez para verificar a posição inicial
         });
+        // ...último trecho do seu script.js
+
+mobileMenuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+});
+        
