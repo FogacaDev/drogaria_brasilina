@@ -4,175 +4,263 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drogaria Brasilina - Sua saúde em boas mãos</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <!-- Header -->
+    <header class="header" id="header">
         <div class="top-bar">
-            <div class="contact-info">
-                <a href="tel:+5511997057953"><i class="fas fa-phone"></i> (11) 997057953</a>
-                <a href="mailto:contato@drogariabrasilina.com.br"><i class="fas fa-envelope"></i> drogariabrasilina@gmail.com</a>
-            </div>
-            <div class="social-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-whatsapp"></i>
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="tel:+5511997057953">
+                        <i class="fas fa-phone"></i>
+                        (11) 99705-7953
+                    </a>
+                    <a href="mailto:drogariabrasilina@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                        drogariabrasilina@gmail.com
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
             </div>
         </div>
-        <div class="navbar">
-            <div class="logo">
-                <i class="fas fa-mortar-pestle"></i>
-                <span>Drogaria Brasilina</span>
-            </div>
-            <div class="nav-links">
-                <a href="#" class="active">Início</a>
-                <a href="#">Produtos</a>
-                <a href="#">Ofertas</a>
-                <a href="#">Serviços</a>
-                <a href="#">Blog</a>
-                <a href="#">Contato</a>
-            </div>
-            <div class="search-cart">
-                <div class="search">
-                    <input type="text" placeholder="Buscar produtos...">
-                    <i class="fas fa-search"></i>
+        
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <i class="fas fa-pills"></i>
+                Drogaria Brasilina
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#" class="active">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Buscar produtos...">
+                    <button type="button" id="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </div>
-                <div class="cart">
+                
+                <button class="cart-button" id="cart-button">
                     <i class="fas fa-shopping-cart"></i>
-                    <span class="cart-count">0</span>
-                </div>
+                    Carrinho
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
             </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
+        <div class="hero-content">
+            <div class="hero-text fade-in">
                 <h1>Sua saúde em primeiro lugar</h1>
-                <p>Na Drogaria Brasilina, você encontra os melhores produtos para cuidar da sua saúde e bem-estar com atendimento personalizado e preços acessíveis.</p>
-                <a href="#" class="btn btn-primary">Conheça nossos produtos</a>
+                <p>Na Drogaria Brasilina, você encontra os melhores produtos farmacêuticos com atendimento especializado, preços justos e a conveniência da compra online com entrega rápida.</p>
+                <div class="hero-buttons">
+                    <a href="#produtos" class="btn btn-primary">
+                        <i class="fas fa-pills"></i>
+                        Ver Produtos
+                    </a>
+                    <a href="#contato" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        Falar Conosco
+                    </a>
+                </div>
             </div>
-            <div class="hero-image"></div>
+            <div class="hero-image">
+                <div class="hero-graphic">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="features">
+    <!-- Features Section -->
+    <section class="features" id="servicos">
         <div class="container">
-            <div class="section-title">
+            <div class="section-header">
                 <h2>Por que nos escolher?</h2>
-                <p>Oferecemos mais que produtos, proporcionamos uma experiência completa de cuidado e bem-estar.</p>
+                <p>Oferecemos uma experiência de mais 15 anos completa de cuidados com a saúde, combinando qualidade, segurança e conveniência em todos os nossos serviços.</p>
             </div>
+            
             <div class="features-grid">
-                <div class="feature-card">
+                <div class="feature-card fade-in">
                     <div class="feature-icon">
-                        <i class="fas fa-truck"></i>
+                        <i class="fas fa-shipping-fast"></i>
                     </div>
                     <h3>Entrega Rápida</h3>
-                    <p>Receba seus produtos em casa com rapidez e segurança. Entregas em até 2 horas em toda a região.</p>
+                    <p>Entrega delivery na região de Sorocaba a São Roque e Correios para todo Brasil com Frete grátis para compras acima de R$ 200,00.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card fade-in">
                     <div class="feature-icon">
-                        <i class="fas fa-certificate"></i>
+                        <i class="fas fa-pills"></i>
                     </div>
-                    <h3>Produtos Certificados</h3>
-                    <p>Todos os nossos produtos são originais e possuem certificação da ANVISA, garantindo sua qualidade.</p>
+                    <h3>Produtos Originais</h3>
+                    <p>Todos os nossos produtos são originais e com procedência garantida, direto dos laboratórios.</p>
                 </div>
-                <div class="feature-card">
+                <div class="feature-card fade-in">
                     <div class="feature-icon">
                         <i class="fas fa-user-md"></i>
                     </div>
-                    <h3>Atendimento Farmacêutico</h3>
-                    <p>Contamos com profissionais especializados para tirar suas dúvidas e oferecer orientações.</p>
+                    <h3>Farmácia Popular</h3>
+                    <p>Aceitamos todos os programas de farmácia popular com descontos.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Nossos farmacêuticos estão disponíveis para tirar dúvidas e orientar sobre medicamentos.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="products">
+    <!-- Products Section -->
+    <section class="products" id="produtos">
         <div class="container">
-            <div class="section-title">
+            <div class="section-header">
                 <h2>Nossos Produtos</h2>
-                <p>Conheça nossa seleção de produtos para cuidar da sua saúde e bem-estar.</p>
+                <p>Encontre os melhores produtos para sua saúde e bem-estar com preços especiais.</p>
             </div>
+            
             <div class="product-filters">
-                <button class="filter-btn active">Todos</button>
-                <button class="filter-btn">Medicamentos</button>
-                <button class="filter-btn">Dermocosméticos</button>
-                <button class="filter-btn">Higiene</button>
-                <button class="filter-btn">Vitaminas</button>
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="medicamentos">Medicamentos</button>
+                <button class="filter-btn" data-filter="cosmeticos">Cosméticos</button>
+                <button class="filter-btn" data-filter="bemestar">Bem-Estar</button>
+                <button class="filter-btn" data-filter="infantil">Infantil</button>
             </div>
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-tag">Destaque</div>
-                        <div class="product-actions">
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-eye"></i>
-                            <i class="fas fa-exchange-alt"></i>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Protetor Solar Facial</h3>
-                        <div class="price">R$ 89,90</div>
-                        <button class="add-to-cart">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-tag">Promoção</div>
-                        <div class="product-actions">
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-eye"></i>
-                            <i class="fas fa-exchange-alt"></i>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Vitamina C Sérum</h3>
-                        <div class="price">R$ 75,90</div>
-                        <button class="add-to-cart">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-actions">
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-eye"></i>
-                            <i class="fas fa-exchange-alt"></i>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Shampoo Hidratante</h3>
-                        <div class="price">R$ 29,90</div>
-                        <button class="add-to-cart">Adicionar ao Carrinho</button>
+            
+            <div class="products-grid" id="products-grid">
+                <!-- Produtos serão inseridos pelo JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Receba Nossas Ofertas</h2>
+            <p>Cadastre seu e-mail e receba promoções exclusivas e descontos especiais.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Seu melhor e-mail" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre Nós</h3>
+                    <p>A Drogaria Brasilina é referência em saúde e bem-estar, oferecendo produtos de qualidade com atendimento personalizado há mais de 15 anos.</p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-actions">
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-eye"></i>
-                            <i class="fas fa-exchange-alt"></i>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <h3>Multivitamínico</h3>
-                        <div class="price">R$ 59,90</div>
-                        <button class="add-to-cart">Adicionar ao Carrinho</button>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <div class="product-tag">Novo</div>
-                        <div class="product-actions">
-                            <i class="far fa-heart"></i>
-                            <i class="fas fa-eye"></i>
                 
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#ofertas">Ofertas</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Paulo Dias, 169 - Alumínio, SP</p>
+                    <p><i class="fas fa-phone"></i> (11) 99705-7953</p>
+                    <p><i class="fas fa-envelope"></i> drogariabrasilina@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Seg-Sex: 8h-19h, Sáb: 8h-12h, Dom: fechado</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Formas de Pagamento</h3>
+                    <p>Aceitamos todos os cartões de crédito e débito, PIX, transferência bancária e dinheiro.</p>
+                    <div style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
+                        <i class="fab fa-cc-visa fa-2x"></i>
+                        <i class="fab fa-cc-mastercard fa-2x"></i>
+                        <i class="fab fa-cc-amex fa-2x"></i>
+                        <i class="fab fa-cc-pix fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Drogaria Brasilina. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Meu Carrinho</h3>
+            <button class="close-cart" id="close-cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Itens do carrinho serão inseridos pelo JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total">R$ 0,00</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">Finalizar Compra</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toast-message">Produto adicionado ao carrinho!</span>
+    </div>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/Observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollSmoother.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>   
+</body>
+</html>
